@@ -43,6 +43,7 @@ static struct qdss_ports {
 	struct grmnet			bam_dmux_port;
 } qdss_ports[NR_QDSS_PORTS];
 
+#undef d_lock
 
 static DEFINE_SPINLOCK(d_lock);
 static LIST_HEAD(usb_qdss_ch_list);
