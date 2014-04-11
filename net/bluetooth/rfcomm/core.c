@@ -182,13 +182,13 @@ static inline int __check_fcs(u8 *data, int type, u8 fcs)
 /* ---- L2CAP callbacks ---- */
 static void rfcomm_l2state_change(struct sock *sk)
 {
-	BT_DBG("%pK state %d", sk, sk->sk_state);
+	BT_DBG("%pK", sk);
 	rfcomm_schedule();
 }
 
-static void rfcomm_l2data_ready(struct sock *sk, int bytes)
+static void rfcomm_l2data_ready(struct sock *sk)
 {
-	BT_DBG("%pK bytes %d", sk, bytes);
+	BT_DBG("%pK", sk);
 	rfcomm_schedule();
 }
 
