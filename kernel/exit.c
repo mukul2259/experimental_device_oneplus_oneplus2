@@ -460,7 +460,7 @@ static void exit_mm(struct task_struct *tsk)
 	if (mm_released)
 		set_tsk_thread_flag(tsk, TIF_MM_RELEASED);
 	if (test_thread_flag(TIF_MEMDIE))
-		unmark_oom_victim();
+		exit_oom_victim();
 }
 
 static struct task_struct *find_alive_thread(struct task_struct *p)
