@@ -165,6 +165,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy/vendor
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
+    /system/vendor/lib64/libcne.so|libcutils_shim.so \
+    /system/vendor/lib64/libdpmframework.so|libcutils_shim.so \
     /system/vendor/lib64/lib-imsvt.so|libshims_ims.so \
     /system/vendor/lib64/lib-imsdpl.so|libshims_boringssl.so \
     /system/vendor/lib/libmmcamera2_stats_algorithm.so|libshim_atomic.so \

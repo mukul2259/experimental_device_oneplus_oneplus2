@@ -303,6 +303,7 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libaudioclient_shim \
+    libcutils_shim \
     librmnetctl \
     libxml2 \
     rild_socket
