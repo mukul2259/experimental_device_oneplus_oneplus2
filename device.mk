@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
     sensors.hal.tof \
     android.hardware.camera.common-helper
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
