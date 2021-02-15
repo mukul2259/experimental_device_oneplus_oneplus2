@@ -30,3 +30,5 @@ service charger /system/bin/charger
 
 on property:dev.bootcomplete=1
     setprop sys.io.scheduler "bfq"
+    write /sys/block/mmcblk0/queue/read_ahead_kb 128
+    write /sys/block/mmcblk0rpmb/queue/read_ahead_kb 128
