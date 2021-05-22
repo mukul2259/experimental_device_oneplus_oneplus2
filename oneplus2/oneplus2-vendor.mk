@@ -21,8 +21,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/cnss-daemon:system/vendor/bin/cnss-daemon \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/energy-awareness:system/vendor/bin/energy-awareness \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
-    vendor/oneplus/oneplus2/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
-    vendor/oneplus/oneplus2/proprietary/vendor/bin/imscmservice:system/vendor/bin/imscmservice \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
     vendor/oneplus/oneplus2/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
