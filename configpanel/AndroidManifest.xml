@@ -54,6 +54,7 @@
             android:name=".BluetoothInputSettings"
             android:icon="@drawable/ic_settings_oclick"
             android:launchMode="singleTop"
+            android:exported="false"
 
             android:label="@string/oclick_panel_title">
             <intent-filter>
@@ -70,21 +71,24 @@
         <!-- Additional button settings (Button settings) -->
         <activity
             android:name=".ButtonSettingsActivity"
-            android:label="@string/button_panel_title">
+            android:label="@string/button_panel_title"
+            android:exported="false">
             <intent-filter>
                 <action android:name="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <receiver android:name=".Startup" >
+        <receiver android:name=".Startup"
+                  android:exported="false" >
             <intent-filter>
                 <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
                 <action android:name="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".KeyHandler" />
+        <activity android:name=".KeyHandler"
+                  android:exported="false" />
     </application>
 
 </manifest>
