@@ -3,4 +3,13 @@
     <privapp-permissions package="com.qualcomm.qcrilmsgtunnel">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.qti.dpmserviceapp">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.quicinc.cne.CNEService">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.PACKET_KEEPALIVE_OFFLOAD"/>
+    </privapp-permissions>
 </permissions>
