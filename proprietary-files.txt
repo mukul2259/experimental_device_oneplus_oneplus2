@@ -466,7 +466,7 @@ bin/imsqmidaemon:vendor/bin/imsqmidaemon|88886668eda7b7303b4a7aefd5b8b3fbffd81b0
 etc/permissions/imscm.xml|8b99ec26c783966bbea1fcb8e72c7c0206a4e802
 framework/imscmlibrary.jar|0c24d6540c06efede52169c1445272f43748180f
 framework/rcsimssettings.jar|566a0f637344ca3182aca33753e404977fc77ecc
--vendor/app/imssettings/imssettings.apk|cd206ecfdf8b9c738823104e13672707cb48ffd1
+-vendor/app/imssettings/imssettings.apk|0f3d622a59038cfc881a26f541f5cc7a0913b603
 vendor/lib64/lib-dplmedia.so|45de23a1bf2c758e71556b88fa01e1f705775b96
 vendor/lib64/lib-ims-rcscmjni.so|57a7cffdf589247b7fa38082418076e491b306ca
 vendor/lib64/lib-imsSDP.so|addec91cf24280784f619433e325bcb84ac11d5d
