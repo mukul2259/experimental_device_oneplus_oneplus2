@@ -21,6 +21,8 @@
 # definition file).
 #
 
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
 TARGET_OTA_ASSERT_DEVICE := OnePlus2,oneplus2
 
 PLATFORM_PATH := device/oneplus/oneplus2
