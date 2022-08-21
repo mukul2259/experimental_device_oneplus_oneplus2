@@ -256,21 +256,21 @@ static void* c2d_wait_loop(void* ptr) {
 static int get_format(int format) {
     switch (format) {
         case HAL_PIXEL_FORMAT_RGB_565:        return C2D_COLOR_FORMAT_565_RGB;
-        case HAL_PIXEL_FORMAT_RGB_888:        return C2D_COLOR_FORMAT_888_RGB |
-                                              C2D_FORMAT_SWAP_RB;
-        case HAL_PIXEL_FORMAT_RGBX_8888:      return C2D_COLOR_FORMAT_8888_ARGB |
-                                              C2D_FORMAT_SWAP_RB |
-                                                  C2D_FORMAT_DISABLE_ALPHA;
-        case HAL_PIXEL_FORMAT_RGBA_8888:      return C2D_COLOR_FORMAT_8888_ARGB |
-                                              C2D_FORMAT_SWAP_RB;
+        case HAL_PIXEL_FORMAT_RGB_888:        return static_cast<int>(C2D_COLOR_FORMAT_888_RGB) |
+                                              static_cast<int>(C2D_FORMAT_SWAP_RB);
+        case HAL_PIXEL_FORMAT_RGBX_8888:      return static_cast<int>(C2D_COLOR_FORMAT_8888_ARGB) |
+                                              static_cast<int>(C2D_FORMAT_SWAP_RB) |
+                                                  static_cast<int>(C2D_FORMAT_DISABLE_ALPHA);
+        case HAL_PIXEL_FORMAT_RGBA_8888:      return static_cast<int>(C2D_COLOR_FORMAT_8888_ARGB) |
+                                              static_cast<int>(C2D_FORMAT_SWAP_RB);
         case HAL_PIXEL_FORMAT_BGRA_8888:      return C2D_COLOR_FORMAT_8888_ARGB;
         case HAL_PIXEL_FORMAT_RGBA_5551:      return C2D_COLOR_FORMAT_5551_RGBA;
         case HAL_PIXEL_FORMAT_RGBA_4444:      return C2D_COLOR_FORMAT_4444_RGBA;
         case HAL_PIXEL_FORMAT_YCbCr_420_SP:   return C2D_COLOR_FORMAT_420_NV12;
         case HAL_PIXEL_FORMAT_NV12_ENCODEABLE:return C2D_COLOR_FORMAT_420_NV12;
         case HAL_PIXEL_FORMAT_YCrCb_420_SP:   return C2D_COLOR_FORMAT_420_NV21;
-        case HAL_PIXEL_FORMAT_YCbCr_420_SP_TILED: return C2D_COLOR_FORMAT_420_NV12 |
-                                                  C2D_FORMAT_MACROTILED;
+        case HAL_PIXEL_FORMAT_YCbCr_420_SP_TILED: return static_cast<int>(C2D_COLOR_FORMAT_420_NV12) |
+                                                  static_cast<int>(C2D_FORMAT_MACROTILED);
         default:                              ALOGE("%s: invalid format (0x%x",
                                                      __FUNCTION__, format);
                                               return -EINVAL;
@@ -282,8 +282,8 @@ static int get_format(int format) {
 static int get_c2d_format_for_yuv_destination(int halFormat) {
     switch (halFormat) {
         // We do not swap the RB when the target is YUV
-        case HAL_PIXEL_FORMAT_RGBX_8888:      return C2D_COLOR_FORMAT_8888_ARGB |
-                                              C2D_FORMAT_DISABLE_ALPHA;
+        case HAL_PIXEL_FORMAT_RGBX_8888:      return static_cast<int>(C2D_COLOR_FORMAT_8888_ARGB) |
+                                              static_cast<int>(C2D_FORMAT_DISABLE_ALPHA);
         case HAL_PIXEL_FORMAT_RGBA_8888:      return C2D_COLOR_FORMAT_8888_ARGB;
         // The U and V need to be interchanged when the target is YUV
         case HAL_PIXEL_FORMAT_YCbCr_420_SP:   return C2D_COLOR_FORMAT_420_NV21;
