@@ -19,7 +19,6 @@
     package="org.lineageos.settings.doze"
     android:versionCode="1"
     android:versionName="1.0"
-    xmlns:tools="http://schemas.android.com/tools"
     android:sharedUserId="android.uid.system">
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -30,11 +29,6 @@
     <application
         android:label="@string/device_settings_app_name"
         android:persistent="true">
-
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="${applicationId}.androidx-startup"
-            tools:replace="android:authorities"/>
 
         <receiver android:name=".BootCompletedReceiver"
             android:exported="false">
