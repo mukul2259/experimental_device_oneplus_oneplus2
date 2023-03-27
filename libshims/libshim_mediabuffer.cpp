@@ -38,6 +38,7 @@ void _ZN7android13GraphicBufferC1EP19ANativeWindowBufferb(
             buffer->layerCount, buffer->usage, buffer->stride);
 }
 
+void _ZN7android11MediaBufferC1ERKNS_2spINS_13GraphicBufferEEE() {}
 void _ZN7android13GraphicBuffer4lockEjPPv() {}
 void _ZNK7android11MediaBuffer13graphicBufferEv() {}
 }
