@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8994 \
     libshim_atomic \
-    sensors.hal.tof
+    sensors.hal.tof \
+    android.hardware.camera.common-helper
 
 # DRM
 PRODUCT_PACKAGES += \
