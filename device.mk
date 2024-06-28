@@ -16,11 +16,6 @@
 
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor.mk)
 
-# APEX
-# Disable APEX compression
-# Keep this after including updatable_apex.mk
-PRODUCT_COMPRESSED_APEX := false
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
