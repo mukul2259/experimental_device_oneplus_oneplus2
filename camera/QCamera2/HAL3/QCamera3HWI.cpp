@@ -34,7 +34,7 @@
 #define __STDC_LIMIT_MACROS
 #include <cutils/properties.h>
 #include <hardware/camera3.h>
-#include </home/mukul2259/los/frameworks/av/camera/include/camera/CameraMetadata.h>
+#include <camera/CameraMetadata.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
